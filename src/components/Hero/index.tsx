@@ -10,27 +10,27 @@ function Hero() {
       <section className="content">
         <div className="contentText">
           <h1>Content One</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-            fuga, corporis modi provident soluta vero ducimus commodi optio eius
-            iste, atque aspernatur neque aperiam cumque.
-          </p>
+          {/* <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sunt quos at asperiores suscipit cum impedit exercitationem autem,
+            accusantium quisquam dolores. Laborum quasi eum asperiores rem
+            mollitia accusamus voluptate officia doloremque deserunt ut
+            repudiandae, atque maxime, molestiae unde quia temporibus rerum
+            saepe deleniti tempora. Quaerat eaque itaque voluptatibus veniam
+            tenetur.
+          </p> */}
           <br />
           <h1>Content Two</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-            fuga, corporis modi provident soluta vero ducimus commodi optio eius
-            iste, atque aspernatur neque aperiam cumque. Aut recusandae
-            perspiciatis, molestiae deleniti vero veritatis, cumque fuga quaerat
-            neque culpa sit quia error!
-          </p>
+          {/* <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sunt quos at asperiores suscipit cum impedit exercitationem autem,
+            accusantium quisquam dolores. Laborum quasi eum asperiores rem
+            mollitia accusamus voluptate officia doloremque deserunt ut
+            repudiandae, atque maxime, molestiae unde quia temporibus rerum
+            saepe deleniti tempora. Quaerat eaque itaque voluptatibus veniam
+            tenetur.
+          </p> */}
           <br />
-          <h1>Content Three</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
-            fuga, corporis modi provident soluta vero ducimus commodi optio eius
-            iste, atque aspernatur neque aperiam cumque.
-          </p>
         </div>
         <div className="contentBrand">
           <img src={brand} />
