@@ -42,7 +42,7 @@ ul {
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link {
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(229, 172, 50));
+  background: -webkit-linear-gradient(rgb(255, 247, 228), rgb(229, 172, 50));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
