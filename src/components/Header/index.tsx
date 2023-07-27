@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-scroll";
-import logo from "../../assets/logoWords.jpg";
+import logo from "../../../public/assets/logoWords.jpg";
 
 function Header() {
   return (

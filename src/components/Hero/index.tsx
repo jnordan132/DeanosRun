@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
-import hero from "../../assets/hero2.jpg";
-import brand from "../../assets/brand.jpg";
+import hero from "../../../public/assets/hero2.jpg";
+import brand from "../../../public/assets/brand.jpg";
 
 function Hero() {
   return (

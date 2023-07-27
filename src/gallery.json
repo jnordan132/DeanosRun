@@ -1,0 +1,38 @@
+[
+  {
+    "image": "./assets/bike.jpg"
+  },
+  {
+    "image": "./assets/brand.jpg"
+  },
+  {
+    "image": "./assets/shirts.jpg"
+  },
+  {
+    "image": "./assets/groupBike.jpg"
+  },
+  {
+    "image": "./assets/groupPic.jpg"
+  },
+  {
+    "image": "./assets/groupTwo.jpg"
+  },
+  {
+    "image": "./assets/raffleOne.jpg"
+  },
+  {
+    "image": "./assets/raffleThree.jpg"
+  },
+  {
+    "image": "./assets/raffleTwo.jpg"
+  },
+  {
+    "image": "./assets/social.jpg"
+  },
+  {
+    "image": "./assets/wristBands.jpg"
+  },
+  {
+    "image": "./assets/socialBikes.jpg"
+  }
+]
