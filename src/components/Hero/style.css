@@ -1,0 +1,55 @@
+h1 {
+  background: none;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+  border-top: 2px solid rgb(229, 172, 50);
+  border-bottom: 2px solid rgb(229, 172, 50);
+}
+
+.hero img {
+  width: 100vw;
+  opacity: 0.4;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  background: none;
+  display: flex;
+  width: 100%;
+}
+.contentBrand,
+.contentText,
+.contentText p {
+  background: none;
+  color: white !important;
+}
+
+.contentText p {
+  margin: 0 150px;
+  font-weight: bold;
+}
+
+.contentText,
+.contentBrand {
+  width: 50%;
+  text-align: center;
+}
+
+.content img {
+  width: 40%;
+  background: none;
+  border: 2px solid rgb(229, 172, 50);
+  opacity: 1;
+}
+
+.content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

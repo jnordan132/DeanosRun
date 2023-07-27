@@ -1,15 +1,18 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-scroll";
+import logo from "../../assets/logoWords.jpg";
 
 function Header() {
   return (
     <header className="header">
+      <div className="logo">
+        <img alt="deano's run logo" src={logo} className="logoImg" />
+      </div>
       <div className="nav">
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
-              <h1>Deano's Run</h1>
               <button
                 className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
                 type="button"
