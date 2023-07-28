@@ -31,3 +31,26 @@
 .dates li {
   list-style-type: none;
 }
+
+.text p {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .events .flex {
+    display: block;
+  }
+  .events p {
+    width: 100%;
+  }
+
+  .text,
+  .dates {
+    margin: 0 auto;
+  }
+  .dates {
+    margin-top: 1rem;
+  }
+}

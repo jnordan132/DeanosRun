@@ -15,7 +15,7 @@ function Events() {
           </p>
         </div>
         <div className="dates">
-          <h3>Dates</h3>
+          <h4>Dates</h4>
           <ul>
             <li>Monday, Sept, 4th - Labor Day</li>
             <li>Monday, Oct, 9th - Columbus Day</li>
