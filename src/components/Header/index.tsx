@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 import { Link } from "react-scroll";
 import logo from "../../../public/assets/logoWords.jpg";
