@@ -55,12 +55,12 @@ function Header() {
                   <li className="nav-item">
                     <Link
                       className="category"
-                      to="link3"
+                      to="gallery"
                       offset={-100}
                       duration={500}
                     >
-                      <a href="link3" className="nav-link active">
-                        Link3
+                      <a href="gallery" className="nav-link active">
+                        Gallery
                       </a>
                     </Link>
                   </li>

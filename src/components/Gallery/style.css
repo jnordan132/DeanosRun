@@ -7,15 +7,11 @@ h1 {
   margin: 2rem;
 }
 
-/* .galCard {
-  width: 50px;
-} */
-
 .gallery {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
 }
 

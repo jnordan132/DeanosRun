@@ -10,7 +10,7 @@ function Hero() {
       <section className="content">
         <div className="contentText">
           <h1>Content One</h1>
-          {/* <p>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sunt quos at asperiores suscipit cum impedit exercitationem autem,
             accusantium quisquam dolores. Laborum quasi eum asperiores rem
@@ -18,10 +18,10 @@ function Hero() {
             repudiandae, atque maxime, molestiae unde quia temporibus rerum
             saepe deleniti tempora. Quaerat eaque itaque voluptatibus veniam
             tenetur.
-          </p> */}
+          </p>
           <br />
           <h1>Content Two</h1>
-          {/* <p>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sunt quos at asperiores suscipit cum impedit exercitationem autem,
             accusantium quisquam dolores. Laborum quasi eum asperiores rem
@@ -29,7 +29,7 @@ function Hero() {
             repudiandae, atque maxime, molestiae unde quia temporibus rerum
             saepe deleniti tempora. Quaerat eaque itaque voluptatibus veniam
             tenetur.
-          </p> */}
+          </p>
           <br />
         </div>
         <div className="contentBrand">
