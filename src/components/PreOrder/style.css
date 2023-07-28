@@ -1,0 +1,41 @@
+.preOrder {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.preOrder .flex {
+  display: flex;
+}
+
+.shirtPreorder img {
+  width: 20vw;
+  border: 3px solid rgb(229, 189, 103);
+}
+
+.preOrder .flex div {
+  width: 50%;
+}
+
+.preOrder .flex ul {
+  margin-top: 2rem;
+  padding: 0;
+  width: 50%;
+}
+.preOrder .flex ul li {
+  text-align: center;
+  list-style-type: none;
+}
+
+.flex .info {
+  text-align: center;
+}
+
+.flex .info p {
+  width: 50%;
+  color: white;
+}
+
+.shirtPreorder {
+  display: flex;
+  justify-content: center;
+}
