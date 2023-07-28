@@ -5,16 +5,16 @@ import gallery from "../../gallery.json";
 
 function Gallery() {
   return (
-    <div>
+    <section className="gallery">
       <h1>Gallery</h1>
-      <section className="gallery">
+      <div className="galSection">
         {gallery.map((data) => (
           <div key={data.image} className="galCard">
             <img src={data.image} alt="Gallery Image" />
           </div>
         ))}
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
 

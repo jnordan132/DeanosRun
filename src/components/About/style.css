@@ -1,0 +1,9 @@
+.about {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about p {
+  color: white;
+  font-weight: 500;
+}

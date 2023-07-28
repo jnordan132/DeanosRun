@@ -1,4 +1,4 @@
-.gallery {
+.galSection {
   width: 100%;
 }
 
@@ -7,7 +7,7 @@ h1 {
   margin: 2rem;
 }
 
-.gallery {
+.galSection {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;

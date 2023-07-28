@@ -31,24 +31,48 @@ function Header() {
                   <li className="nav-item">
                     <Link
                       className="category"
-                      to="link1"
-                      offset={-100}
+                      to="about"
+                      offset={-25}
                       duration={500}
                     >
-                      <a href="link1" className="nav-link active">
-                        Link1
+                      <a href="about" className="nav-link active">
+                        About
                       </a>
                     </Link>
                   </li>
                   <li className="nav-item">
                     <Link
                       className="category"
-                      to="link2"
-                      offset={-100}
+                      to="events"
+                      offset={-25}
                       duration={500}
                     >
-                      <a href="link2" className="nav-link active">
-                        Link2
+                      <a href="events" className="nav-link active">
+                        Events
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      className="category"
+                      to="donate"
+                      offset={-25}
+                      duration={500}
+                    >
+                      <a href="donate" className="nav-link active">
+                        Donate
+                      </a>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      className="category"
+                      to="preOrder"
+                      offset={-25}
+                      duration={500}
+                    >
+                      <a href="preOrder" className="nav-link active">
+                        Pre-Order
                       </a>
                     </Link>
                   </li>
@@ -56,7 +80,7 @@ function Header() {
                     <Link
                       className="category"
                       to="gallery"
-                      offset={-100}
+                      offset={-25}
                       duration={500}
                     >
                       <a href="gallery" className="nav-link active">

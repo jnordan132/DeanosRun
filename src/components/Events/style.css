@@ -1,0 +1,33 @@
+.events {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.events p {
+  color: white;
+}
+
+.events li {
+  color: white;
+}
+
+.events .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.events .flex div {
+  width: 50%;
+}
+
+.dates {
+  text-align: center;
+}
+
+.dates ul {
+  padding: 0;
+}
+
+.dates li {
+  list-style-type: none;
+}
