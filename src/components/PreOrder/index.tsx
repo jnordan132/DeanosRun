@@ -1,5 +1,6 @@
 import images from "../../gallery.json";
 import "./style.css";
+import shirt from "./shirts.jpg";
 
 function PreOrder() {
   console.log(images[2]);
@@ -8,7 +9,7 @@ function PreOrder() {
       <h1>Pre-Order</h1>
       <div className="flex">
         <div className="shirtPreorder">
-          <img src={images[2].image} />
+          <img src={shirt} />
         </div>
         <div className="info">
           <p>
