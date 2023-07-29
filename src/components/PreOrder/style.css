@@ -5,6 +5,7 @@
 
 .preOrder .flex {
   display: flex;
+  /* align-items: center; */
 }
 
 .shirtPreorder img {
@@ -28,11 +29,13 @@
 
 .flex .info {
   text-align: center;
+  margin-top: 2%;
 }
 
 .flex .info p {
   width: 50%;
   color: white;
+  font-weight: bold;
 }
 
 .shirtPreorder {

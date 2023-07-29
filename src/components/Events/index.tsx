@@ -9,8 +9,7 @@ function Events() {
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
             laboriosam accusantium consequatur tempora quia debitis excepturi
-            libero quidem unde ipsum ipsa similique. Cumque fuga odio, ipsa
-            accusantium cupiditate veniam quibusdam.
+            libero quidem unde ipsum ipsa similique.
           </p>
         </div>
         <div className="dates">
