@@ -9,7 +9,7 @@ function Hero() {
       <img src={hero} />
       <section className="content">
         <div className="contentText">
-          <h1>Content One</h1>
+          {/*<h1>Content One</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
             sunt quos at asperiores suscipit cum impedit exercitationem autem,
@@ -30,7 +30,7 @@ function Hero() {
             saepe deleniti tempora. Quaerat eaque itaque voluptatibus veniam
             tenetur.
           </p>
-          <br />
+          <br /> */}
         </div>
         <div className="contentBrand">
           <img src={brand} />

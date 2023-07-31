@@ -39,6 +39,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .events {
+    width: 80%;
+  }
   .events .flex {
     display: block;
   }
@@ -52,5 +55,20 @@
   }
   .dates {
     margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .events {
+    width: 80%;
+  }
+  .events .flex div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .events {
+    width: 90%;
   }
 }

@@ -13,7 +13,7 @@ function PreOrder() {
         </div>
         <div className="info">
           <p>
-            If you would like to pre-order a Dean's Run shirt, Please feel free
+            If you would like to pre-order a Deano's Run shirt, Please feel free
             to contact me personally through either of the below options.
           </p>
           <ul>

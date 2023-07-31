@@ -42,3 +42,41 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 1200px) {
+  .preOrder .flex {
+    display: block;
+  }
+  .preOrder .flex div {
+    width: 100%;
+  }
+  .preOrder .flex {
+    text-align: center;
+  }
+  .flex .info p {
+    width: 50%;
+    margin: 5% auto 0 auto;
+  }
+  .flex .info {
+    text-align: center;
+  }
+  .preOrder .flex ul {
+    width: 100%;
+  }
+
+  .preOrder img {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .preOrder img {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .preOrder .info p {
+    width: 100%;
+  }
+}
