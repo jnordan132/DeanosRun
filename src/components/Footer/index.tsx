@@ -8,8 +8,15 @@ function Footer() {
         <img src={logo} />
         <div>
           <h4>Contact Us</h4>
-          <p>Email</p>
-          <p>Phone</p>
+          <li>
+            Email:{" "}
+            <a href="mailto:jake.wierzbicki50@gmail.com">
+              jake.wierzbicki50@gmail.com
+            </a>
+          </li>
+          <li>
+            Phone: <a href="tel:9106228399">(910) 622-8399</a>
+          </li>
         </div>
         <p>© 2022 Deano's Run | All rights reserved.</p>
       </div>
