@@ -7,7 +7,7 @@ h1 {
   margin: 2rem;
 }
 
-.galSection {
+.desktop {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 20px;
@@ -18,4 +18,24 @@ h1 {
 .galCard,
 img {
   width: 100%;
+}
+
+.mobile {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .desktop {
+    display: none;
+  }
 }

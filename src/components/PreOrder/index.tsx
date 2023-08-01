@@ -1,4 +1,4 @@
-import images from "../../gallery.json";
+import images from "../../utils/desktopGallery.json";
 import "./style.css";
 import shirt from "./shirts.jpg";
 
