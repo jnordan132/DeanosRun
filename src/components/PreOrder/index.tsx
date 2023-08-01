@@ -13,12 +13,16 @@ function PreOrder() {
         </div>
         <div className="info">
           <p>
-            If you would like to pre-order a Deano's Run shirt, Please feel free
-            to contact me personally through either of the below options.
+            If you would like to pre-order a Deano's Run t-shirt or tank top,
+            Please feel free to contact me personally through either of the
+            below options.
           </p>
           <ul>
             <li>
-              Email: <a href="mailto:blank@gmail.com">blank@gmail.com</a>
+              Email:{" "}
+              <a href="mailto:jake.wierzbicki50@gmail.com">
+                jake.wierzbicki50@gmail.com
+              </a>
             </li>
             <li>
               Phone: <a href="tel:9106228399">(910) 622-8399</a>
