@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 
 import gallery from "../../gallery.json";
