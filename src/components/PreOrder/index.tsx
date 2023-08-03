@@ -1,9 +1,7 @@
-import images from "../../utils/desktopGallery.json";
 import "./style.css";
 import shirt from "./shirts.jpg";
 
 function PreOrder() {
-  console.log(images[2]);
   return (
     <section className="preOrder">
       <h1>Pre-Order</h1>
@@ -12,7 +10,7 @@ function PreOrder() {
           <img src={shirt} />
         </div>
         <div className="info">
-          <p>
+          {/* <p>
             If you would like to pre-order a Deano's Run t-shirt or tank top,
             Please feel free to contact me personally through either of the
             below options.
@@ -27,7 +25,7 @@ function PreOrder() {
             <li>
               Phone: <a href="tel:9106228399">(910) 622-8399</a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </section>

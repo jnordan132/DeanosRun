@@ -5,10 +5,9 @@
   font-weight: 500;
 }
 
-/* h1 {
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(229, 172, 50));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
+section {
+  /* border: 1px solid blue; */
+  margin-bottom: 75px !important;
+}
 
 /* main orange rgb(229, 172, 50) */

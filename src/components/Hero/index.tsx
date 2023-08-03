@@ -4,9 +4,9 @@ import brand from "../../../public/assets/brand.jpg";
 
 function Hero() {
   return (
-    <section className="hero">
+    <div className="hero">
       <img src={hero} />
-      <section className="content">
+      <div className="content">
         <div className="contentText">
           {/*<h1>Content One</h1>
           <p>
@@ -34,8 +34,8 @@ function Hero() {
         <div className="contentBrand">
           <img src={brand} />
         </div>
-      </section>
-    </section>
+      </div>
+    </div>
   );
 }
 
