@@ -94,25 +94,28 @@ function PreOrder() {
           {sizes.map((size) => (
             <button
               key={size}
-              className="checkout-button"
+              className="itemButton"
               onClick={() => addToCart(import.meta.env[`VITE_${size}_ID`])}
             >
               {size}
             </button>
           ))}
-          <div>
+          <div className="cart">
             <ul>
               {cartItems.map((item) => (
-                <li key={item.price}>
-                  x{item.quantity} - {itemNames[item.price]}
-                  <button onClick={() => removeFromCart(item.price)}>
+                <li key={item.price} className="cartItem">
+                  {itemNames[item.price]} - {item.quantity}x
+                  <button
+                    className="removeBtn"
+                    onClick={() => removeFromCart(item.price)}
+                  >
                     Remove
                   </button>
                 </li>
               ))}
             </ul>
           </div>
-          <div>
+          <div className="checkout">
             {cartItems.length > 0 ? (
               <button
                 className="checkoutBtn"
@@ -125,21 +128,19 @@ function PreOrder() {
               <></>
             )}
           </div>
+          {/* {`${window.location.pathname}` === "/success" ? (
+          <div>
+            <h4>Thank you for your purchase!</h4>
+          </div>
+        ) : `${window.location.pathname}` === "/cancel" ? (
+          <div>
+            <h4>Your payment was canceled.</h4>
+          </div>
+        ) : (
+          <div>test</div>
+        )} */}
         </div>
       </div>
-      {`${window.location.pathname}` === "/success" ? (
-        <div>
-          <h3>Success</h3>
-          <h4>Thank you for your purchase!</h4>
-        </div>
-      ) : `${window.location.pathname}` === "/cancel" ? (
-        <div>
-          <h3>Cancel</h3>
-          <h4>Your payment was canceled.</h4>
-        </div>
-      ) : (
-        <div>test</div>
-      )}
       {stripeError && <div>{stripeError}</div>}
     </section>
   );
