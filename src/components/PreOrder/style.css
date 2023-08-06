@@ -1,5 +1,5 @@
 .preOrder {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -32,10 +32,18 @@
   margin-top: 2%;
 }
 
-.flex .info p {
-  width: 50%;
-  color: white;
-  font-weight: bold;
+.checkout-button {
+  width: 40px;
+  height: 40px;
+  margin: 3px 3px;
+  background-color: white;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+.checkout-button:hover {
+  background-color: rgb(195, 195, 195);
 }
 
 .shirtPreorder {
