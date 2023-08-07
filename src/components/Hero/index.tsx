@@ -10,9 +10,8 @@ function Hero() {
         <div className="contentText">
           <h1>May 18, 2024</h1>
           <p>
-            Mark your calendars and don't miss out. 2023 was awesome, let's make
-            24 better. More info and surprises to be announced! Word on the
-            block “bring a tent…" Bring your homies!
+            Mark your calendars and don't miss out. More info and surprises to
+            be announced! Word on the block “bring a tent…"
           </p>
         </div>
         <div className="contentBrand">
