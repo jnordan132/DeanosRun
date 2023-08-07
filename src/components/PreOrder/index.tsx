@@ -1,6 +1,6 @@
 import "./style.css";
 import { loadStripe } from "@stripe/stripe-js";
-import shirt from "./shirts.jpg";
+import shirt from "./preOrder.png";
 import { useState } from "react";
 
 interface CartItem {
@@ -13,9 +13,9 @@ const itemNames: { [key: string]: string } = {
   [import.meta.env.VITE_3XL_ID]: "3XL",
   [import.meta.env.VITE_2XL_ID]: "2XL",
   [import.meta.env.VITE_XL_ID]: "XL",
-  [import.meta.env.VITE_L_ID]: "L",
-  [import.meta.env.VITE_M_ID]: "M",
-  [import.meta.env.VITE_S_ID]: "S",
+  [import.meta.env.VITE_L_ID]: "Large",
+  [import.meta.env.VITE_M_ID]: "Medium",
+  [import.meta.env.VITE_S_ID]: "Small",
 };
 
 function PreOrder() {
@@ -104,12 +104,12 @@ function PreOrder() {
             <ul>
               {cartItems.map((item) => (
                 <li key={item.price} className="cartItem">
-                  {itemNames[item.price]} - {item.quantity}x
+                  {item.quantity} - {itemNames[item.price]}
                   <button
                     className="removeBtn"
                     onClick={() => removeFromCart(item.price)}
                   >
-                    Remove
+                    -
                   </button>
                 </li>
               ))}

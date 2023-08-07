@@ -10,4 +10,10 @@ section {
   margin-bottom: 75px !important;
 }
 
+button {
+  background-color: #242021 !important;
+  color: rgb(229, 189, 103) !important;
+  border: 1px solid rgb(64, 64, 64) !important;
+}
+
 /* main orange rgb(229, 172, 50) */

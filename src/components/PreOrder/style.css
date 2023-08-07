@@ -5,12 +5,13 @@
 
 .preOrder .flex {
   display: flex;
+  /* justify-content: center; */
   /* align-items: center; */
 }
 
 .shirtPreorder img {
-  width: 20vw;
-  border: 3px solid rgb(229, 189, 103);
+  width: 28vw;
+  /* border: 3px solid rgb(229, 189, 103); */
 }
 
 .preOrder .flex div {
@@ -56,32 +57,42 @@
 .itemButton {
   width: 40px;
   height: 40px;
-  margin: 3px 3px;
-  background-color: white;
-  color: grey;
-  border: 1px solid grey;
+  margin: 5px 5px;
   border-radius: 2px;
 }
 
 .removeBtn,
 .checkoutBtn {
-  margin: 3px 3px;
-  background-color: white;
-  color: grey;
-  border: 1px solid grey;
+  margin: 5px 3px;
   border-radius: 2px;
   padding-left: 3px;
   padding-right: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.removeBtn {
+  height: 25px;
+  /* width: 25px; */
 }
 
 .itemButton:hover,
 .removeBtn:hover {
-  background-color: rgb(195, 195, 195);
+  background-color: rgb(73, 73, 73);
+}
+
+.checkout {
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* width: 100%; */
+  /* left: 0; */
+  /* right: 0; */
+  margin: 0 auto;
 }
 
 .checkoutBtn {
-  position: absolute;
-  bottom: 0;
+  padding: 8px;
+  border: 1px solid rgb(229, 189, 103) !important;
 }
 
 .shirtPreorder {
