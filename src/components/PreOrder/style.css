@@ -100,6 +100,14 @@
   justify-content: center;
 }
 
+.alert {
+  margin: 0 auto;
+}
+
+.alert h4 {
+  width: 200%;
+}
+
 @media screen and (max-width: 1200px) {
   .preOrder .flex {
     display: block;
@@ -123,6 +131,10 @@
 
   .preOrder img {
     width: 30vw;
+  }
+
+  .alert h4 {
+    width: 100%;
   }
 }
 

@@ -22,6 +22,7 @@ function PreOrder() {
   const [stripeError, setStripeError] = useState<null | string>(null);
   const [isLoading, setLoading] = useState(false);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [sizeClicked, setSizeClicked] = useState(false);
 
   const sizes = ["S", "M", "L", "XL", "2XL", "3XL", "4XL"];
 
@@ -36,6 +37,8 @@ function PreOrder() {
   };
 
   const addToCart = (price: string) => {
+    setSizeClicked(true); // Set sizeClicked to true when a size button is clicked
+
     const totalQuantity = cartItems.reduce((total, item) => {
       return item.price === price ? total + item.quantity : total;
     }, 0);
@@ -128,17 +131,23 @@ function PreOrder() {
               <></>
             )}
           </div>
-          {/* {`${window.location.pathname}` === "/success" ? (
-          <div>
-            <h4>Thank you for your purchase!</h4>
+          <div className="alert">
+            {!sizeClicked && (
+              <>
+                {`${window.location.pathname}` === "/success" ? (
+                  <div>
+                    <h4>Thank you for your purchase!</h4>
+                  </div>
+                ) : `${window.location.pathname}` === "/cancel" ? (
+                  <div>
+                    <h4>Your payment was canceled.</h4>
+                  </div>
+                ) : (
+                  <></>
+                )}
+              </>
+            )}
           </div>
-        ) : `${window.location.pathname}` === "/cancel" ? (
-          <div>
-            <h4>Your payment was canceled.</h4>
-          </div>
-        ) : (
-          <div>test</div>
-        )} */}
         </div>
       </div>
       {stripeError && <div>{stripeError}</div>}
