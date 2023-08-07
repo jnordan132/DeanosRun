@@ -8,28 +8,12 @@ function Hero() {
       <img src={hero} />
       <div className="content">
         <div className="contentText">
-          {/*<h1>Content One</h1>
+          <h1>May 18, 2024</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-            sunt quos at asperiores suscipit cum impedit exercitationem autem,
-            accusantium quisquam dolores. Laborum quasi eum asperiores rem
-            mollitia accusamus voluptate officia doloremque deserunt ut
-            repudiandae, atque maxime, molestiae unde quia temporibus rerum
-            saepe deleniti tempora. Quaerat eaque itaque voluptatibus veniam
-            tenetur.
+            Mark your calendars and don't miss out. 2023 was awesome, let's make
+            24 better. More info and surprises to be announced! Word on the
+            block “bring a tent…" Bring your homies!
           </p>
-          <br />
-          <h1>Content Two</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-            sunt quos at asperiores suscipit cum impedit exercitationem autem,
-            accusantium quisquam dolores. Laborum quasi eum asperiores rem
-            mollitia accusamus voluptate officia doloremque deserunt ut
-            repudiandae, atque maxime, molestiae unde quia temporibus rerum
-            saepe deleniti tempora. Quaerat eaque itaque voluptatibus veniam
-            tenetur.
-          </p>
-          <br /> */}
         </div>
         <div className="contentBrand">
           <img src={brand} />

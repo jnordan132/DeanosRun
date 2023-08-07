@@ -1,6 +1,7 @@
 .hero h1 {
   background: none;
   font-size: 2.5vw;
+  margin: 0.75rem !important;
 }
 
 .hero {
@@ -32,7 +33,7 @@
 
 .contentText p {
   margin: 0 150px;
-  font-weight: bold;
+  font-size: 1.75vw;
 }
 
 .contentText,

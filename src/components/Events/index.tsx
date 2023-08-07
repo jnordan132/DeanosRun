@@ -7,17 +7,15 @@ function Events() {
       <div className="flex">
         <div className="text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-            laboriosam accusantium consequatur tempora quia debitis excepturi
-            libero quidem unde ipsum ipsa similique.
+            Mark your calendars and don't miss out. 2023 was awesome, let's make
+            24 better. More info and surprises to be announced! Word on the
+            block “bring a tent…" Bring your homies!
           </p>
         </div>
         <div className="dates">
           <h4>Dates</h4>
           <ul>
-            <li>Monday, Sept, 4th - Labor Day</li>
-            <li>Monday, Oct, 9th - Columbus Day</li>
-            <li>Friday, Nov, 10th - Veterans Day</li>
+            <li>May 18, 2024 - Deano's Run</li>
           </ul>
         </div>
       </div>

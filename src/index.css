@@ -5,6 +5,11 @@
   font-weight: 500;
 }
 
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
 section {
   /* border: 1px solid blue; */
   margin-bottom: 75px !important;
