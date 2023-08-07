@@ -71,3 +71,9 @@
     font-weight: bold;
   }
 }
+@media screen and (max-width: 600px) {
+  .contentText p {
+    margin: 0 20px;
+    font-size: 70%;
+  }
+}
