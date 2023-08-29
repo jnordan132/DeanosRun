@@ -8,6 +8,12 @@
   /* font-weight: 500; */
 }
 
+/* .about b {
+  opacity: 0.8;
+} */
+
+/*  */
+
 @media screen and (max-width: 1200px) {
   .about p {
     text-align: center;
