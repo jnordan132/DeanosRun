@@ -9,10 +9,8 @@ function Hero() {
       <div className="content">
         <div className="contentText">
           <h1>May 18, 2024</h1>
-          <p>
-            Mark your calendars and don't miss out. More info and surprises to
-            be announced! Word on the block “bring a tent…"
-          </p>
+          <p>Meet up at 11am @ Salter Speed Shop</p>
+          <p>Kickstands up at 12pm</p>
         </div>
         <div className="contentBrand">
           <img src={brand} />

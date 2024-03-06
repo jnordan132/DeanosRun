@@ -72,6 +72,18 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .content {
+    display: block;
+  }
+
+  .contentBrand {
+    display: none;
+  }
+
+  .contentText {
+    width: 100%;
+  }
+
   .hero h1 {
     font-size: 4vw;
   }
