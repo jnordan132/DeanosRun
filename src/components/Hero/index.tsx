@@ -1,6 +1,6 @@
 import "./style.css";
 import hero from "../../../public/assets/hero2.jpg";
-import brand from "../../../public/assets/brand.jpg";
+import brand from "../../../public/assets/flyer.jpg";
 
 function Hero() {
   return (

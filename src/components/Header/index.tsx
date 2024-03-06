@@ -1,6 +1,6 @@
 import "./style.css";
 import { Link } from "react-scroll";
-import logo from "../../../public/assets/logoWords.jpg";
+import logo from "../../../public/assets/DRLogoCropped.jpg";
 
 function Header() {
   return (

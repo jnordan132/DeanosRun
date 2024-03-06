@@ -1,4 +1,4 @@
-import logo from "../../../public/assets/logoWords.jpg";
+import logo from "../../../public/assets/DRLogo2.jpg";
 import "./style.css";
 
 function Footer() {
@@ -18,7 +18,7 @@ function Footer() {
             Phone: <a href="tel:9106228399">(910) 622-8399</a>
           </li>
         </div>
-        <p>© 2022 Deano's Run | All rights reserved.</p>
+        <p>© 2024 Deano's Run | All rights reserved.</p>
       </div>
     </footer>
   );
