@@ -69,14 +69,24 @@ function PreOrder() {
 
   const redirectToCheckout = async () => {
     setLoading(true);
-    console.log("redirectToCheckout");
+
+    // Create a new array from cartItems including the shipping cost as the last item
+    const itemsWithShipping = [
+      ...cartItems,
+      { price: import.meta.env.VITE_SHIPPING, quantity: 1 },
+    ];
+
     const stripe = await getStripe();
     const { error } = await stripe.redirectToCheckout({
-      lineItems: cartItems,
+      lineItems: itemsWithShipping.map((item) => ({
+        price: item.price,
+        quantity: item.quantity,
+      })),
       mode: "payment",
       successUrl: `${window.location.origin}`,
       cancelUrl: `${window.location.origin}`,
     });
+
     console.log("Stripe checkout error", error);
     if (error) setStripeError(error.message);
     setLoading(false);
