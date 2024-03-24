@@ -92,7 +92,7 @@ function PreOrder() {
         <div className="info">
           <h4>Deano's Run T-Shirt</h4>
           <b>
-            <h5>$27.00</h5>
+            <h5>S-2XL $27 | 3XL-4XL $35</h5>
           </b>
           {sizes.map((size) => (
             <button
