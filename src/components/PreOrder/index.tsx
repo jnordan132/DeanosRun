@@ -74,8 +74,8 @@ function PreOrder() {
     const { error } = await stripe.redirectToCheckout({
       lineItems: cartItems,
       mode: "payment",
-      successUrl: `${window.location.origin}/success`,
-      cancelUrl: `${window.location.origin}/cancel`,
+      successUrl: `${window.location.origin}`,
+      cancelUrl: `${window.location.origin}`,
     });
     console.log("Stripe checkout error", error);
     if (error) setStripeError(error.message);
