@@ -69,24 +69,14 @@ function PreOrder() {
 
   const redirectToCheckoutPi = async () => {
     setLoading(true);
-
-    // Create a new array from cartItems including the shipping cost as the last item
-    const itemsWithShipping = [
-      ...cartItems,
-      { price: import.meta.env.VITE_SHIPPING, quantity: 1 },
-    ];
-
+    console.log("redirectToCheckout");
     const stripe = await getStripe();
     const { error } = await stripe.redirectToCheckout({
-      lineItems: itemsWithShipping.map((item) => ({
-        price: item.price,
-        quantity: item.quantity,
-      })),
+      lineItems: cartItems,
       mode: "payment",
       successUrl: `${window.location.origin}`,
       cancelUrl: `${window.location.origin}`,
     });
-
     console.log("Stripe checkout error", error);
     if (error) setStripeError(error.message);
     setLoading(false);
@@ -108,7 +98,7 @@ function PreOrder() {
         quantity: item.quantity,
       })),
       shippingAddressCollection: {
-        allowedCountries: ['US'],
+        allowedCountries: ['US', 'CA'],
       },
       mode: "payment",
       successUrl: `${window.location.origin}`,
