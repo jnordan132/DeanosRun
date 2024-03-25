@@ -67,7 +67,7 @@ function PreOrder() {
     );
   };
 
-  const redirectToCheckout = async () => {
+  const redirectToCheckoutPu = async () => {
     setLoading(true);
 
     // Create a new array from cartItems including the shipping cost as the last item
@@ -77,7 +77,35 @@ function PreOrder() {
     ];
 
     const stripe = await getStripe();
-    const { error } = await stripe.redirectToCheckout({
+    const { error } = await stripe.redirectToCheckoutPu({
+      lineItems: itemsWithShipping.map((item) => ({
+        price: item.price,
+        quantity: item.quantity,
+      })),
+      shippingAddressCollection: {
+        allowedCountries: ['US'],
+      },
+      mode: "payment",
+      successUrl: `${window.location.origin}`,
+      cancelUrl: `${window.location.origin}`,
+    });
+
+    console.log("Stripe checkout error", error);
+    if (error) setStripeError(error.message);
+    setLoading(false);
+  };
+
+  const redirectToCheckoutSh = async () => {
+    setLoading(true);
+
+    // Create a new array from cartItems including the shipping cost as the last item
+    const itemsWithShipping = [
+      ...cartItems,
+      { price: import.meta.env.VITE_SHIPPING, quantity: 1 },
+    ];
+
+    const stripe = await getStripe();
+    const { error } = await stripe.redirectToCheckoutSh({
       lineItems: itemsWithShipping.map((item) => ({
         price: item.price,
         quantity: item.quantity,
@@ -102,7 +130,7 @@ function PreOrder() {
         <div className="info">
           <h4>Deano's Run T-Shirt</h4>
           <b>
-            <h5>S-2XL $27 | 3XL-4XL $35</h5>
+            <h5>S-2XL $28 | 3XL-4XL $38</h5>
           </b>
           {sizes.map((size) => (
             <button
@@ -132,10 +160,23 @@ function PreOrder() {
             {cartItems.length > 0 ? (
               <button
                 className="checkoutBtn"
-                onClick={redirectToCheckout}
+                onClick={redirectToCheckoutPu}
                 disabled={isLoading}
               >
-                {isLoading ? "Loading..." : "Checkout"}
+                {isLoading ? "Loading..." : "Pick Up at Event"}
+              </button>
+            ) : (
+              <></>
+            )}
+          </div>
+          <div className="checkout">
+            {cartItems.length > 0 ? (
+              <button
+                className="checkoutBtn"
+                onClick={redirectToCheckoutSh}
+                disabled={isLoading}
+              >
+                {isLoading ? "Loading..." : "Ship to Residence"}
               </button>
             ) : (
               <></>
