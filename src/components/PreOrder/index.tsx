@@ -67,7 +67,7 @@ function PreOrder() {
     );
   };
 
-  const redirectToCheckoutPu = async () => {
+  const redirectToCheckoutPi = async () => {
     setLoading(true);
 
     // Create a new array from cartItems including the shipping cost as the last item
@@ -77,14 +77,11 @@ function PreOrder() {
     ];
 
     const stripe = await getStripe();
-    const { error } = await stripe.redirectToCheckoutPu({
+    const { error } = await stripe.redirectToCheckout({
       lineItems: itemsWithShipping.map((item) => ({
         price: item.price,
         quantity: item.quantity,
       })),
-      shippingAddressCollection: {
-        allowedCountries: ['US'],
-      },
       mode: "payment",
       successUrl: `${window.location.origin}`,
       cancelUrl: `${window.location.origin}`,
@@ -105,11 +102,14 @@ function PreOrder() {
     ];
 
     const stripe = await getStripe();
-    const { error } = await stripe.redirectToCheckoutSh({
+    const { error } = await stripe.redirectToCheckout({
       lineItems: itemsWithShipping.map((item) => ({
         price: item.price,
         quantity: item.quantity,
       })),
+      shippingAddressCollection: {
+        allowedCountries: ['US'],
+      },
       mode: "payment",
       successUrl: `${window.location.origin}`,
       cancelUrl: `${window.location.origin}`,
@@ -160,7 +160,7 @@ function PreOrder() {
             {cartItems.length > 0 ? (
               <button
                 className="checkoutBtn"
-                onClick={redirectToCheckoutPu}
+                onClick={redirectToCheckoutPi}
                 disabled={isLoading}
               >
                 {isLoading ? "Loading..." : "Pick Up at Event"}
