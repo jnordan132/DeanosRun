@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Events from "./components/Events";
 import Donate from "./components/Donate";
-import PreOrder from "./components/PreOrder";
+// import PreOrder from "./components/PreOrder";
 import Gallery from "./components/Gallery";
 
 import Footer from "./components/Footer";
@@ -16,7 +16,7 @@ function App() {
       <About />
       <Events />
       <Donate />
-      <PreOrder />
+      {/* <PreOrder /> */}
       <Gallery />
       <Footer />
     </>
