@@ -1,4 +1,5 @@
 import "./style.css";
+import NamesList from "./listOfNames";
 
 function Events() {
   return (
@@ -12,6 +13,8 @@ function Events() {
             <p>Kickstands up at 12pm</p>
           </div>
         </div>
+        <h1>Thank you to those who donated!</h1>
+        <NamesList />
       </div>
     </section>
   );
